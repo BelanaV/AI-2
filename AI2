@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrivision: AI for Zero Hunger (SDG 2)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-gradient-to-r from-green-700 to-green-900 shadow-xl">
+        <div class="container mx-auto px-4 py-16 text-white rounded-b-xl">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                    AI-Driven Crop Health and Yield Prediction System
+                </h1>
+                <p class="text-xl font-light opacity-90 mb-6">
+                    Agrivision: Predictive Agriculture Platform
+                </p>
+                <div class="inline-block px-6 py-2 bg-yellow-400 text-gray-900 font-bold rounded-full text-lg shadow-lg">
+                    SDG 2: Zero Hunger
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        
+        <!-- SDG Alignment & Target Focus -->
+        <section id="sdg-alignment" class="mb-12 p-8 bg-white rounded-xl shadow-lg border-l-4 border-green-600">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                1. Project Alignment
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+                **Selected SDG:** **SDG 2: Zero Hunger**. The project directly supports the goal of achieving food security and improved nutrition.
+            </p>
+            <p class="mt-3 text-gray-700 font-semibold">
+                Target Focus 2.4:
+            </p>
+            <blockquote class="mt-2 pl-4 border-l-4 border-gray-200 italic text-gray-500">
+                Ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality.
+            </blockquote>
+        </section>
+
+        <!-- The Global Challenge -->
+        <section id="challenge" class="mb-12 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                2. The Global Challenge
+            </h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Global food security is fundamentally threatened by unpredictable climate patterns, water scarcity, and the rapid spread of crop diseases and pests. For smallholder farmers, a single season of crop failure can lead to poverty and severe food shortages.
+            </p>
+            <p class="mt-4 text-gray-700 font-medium leading-relaxed">
+                The challenge is a lack of **timely, localized, and actionable intelligence** that allows farmers and governments to intervene before a crisis occurs.
+            </p>
+        </section>
+
+        <!-- AI-Driven Solution & Objective -->
+        <section id="solution" class="mb-12 p-8 bg-white rounded-xl shadow-lg border-t-4 border-blue-500">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 0 9-9z"/><path d="M7.6 13.7c1.4 1 3.1 1.6 5 1.6a7.2 7.2 0 0 0 5-1.6"/></svg>
+                3. The AI-Driven Solution
+            </h2>
+            <p class="text-xl font-semibold text-gray-700 mb-4">
+                **System Name:** Agrivision: Predictive Agriculture Platform
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                **Objective:** To predict crop yield (regression) and detect early signs of disease/pest infestation (classification) at the field level, providing farmers with proactive, optimized resource management recommendations.
+            </p>
+        </section>
+
+        <!-- Machine Learning Methodology -->
+        <section id="methodology" class="mb-12 p-8 bg-gray-100 rounded-xl shadow-inner">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">
+                4. Machine Learning Methodology
+            </h2>
+
+            <!-- Yield Prediction (Regression) -->
+            <div class="mb-8 p-6 bg-white rounded-lg shadow-md border-l-4 border-purple-500">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">A. Yield Prediction (Supervised Learning - Regression)</h3>
+                <p class="text-gray-600 mb-4">
+                    **Goal:** Forecast the expected harvest yield (a continuous numerical value, e.g., tonnes/hectare) weeks or months in advance.
+                </p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-purple-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Component</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ML Technique</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Model Type</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Supervised Learning (Regression) - Time-Series Regression (LSTMs or standard Neural Networks)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Trained on labeled historical data where input features are mapped to a known output value (actual recorded yield).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Input Features</td>
+                                <td class="px-6 py-4 text-sm text-gray-500" colspan="2">Environmental Data (Temperature, Precipitation), Geospatial Data (Soil type, elevation), Agronomic Data (Crop variety, fertilizer use).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Output</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500" colspan="2">A single continuous value representing the predicted crop yield.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Disease and Pest Detection (Classification) -->
+            <div class="p-6 bg-white rounded-lg shadow-md border-l-4 border-orange-500">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">B. Disease and Pest Detection (Deep Learning - Classification)</h3>
+                <p class="text-gray-600 mb-4">
+                    **Goal:** Identify the presence and type of crop stress (disease, pest damage, nutrient deficiency) from aerial imagery. [Image of convolutional neural network architecture for image classification]
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-orange-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Component</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ML Technique</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Model Type</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Deep Learning (Convolutional Neural Networks - CNNs)</td>
+                                <td class="px-6 py-4 text-sm text-gray-500">Ideal for processing grid-like data (images) to accurately classify the visual state of the crop.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Input Features</td>
+                                <td class="px-6 py-4 text-sm text-gray-500" colspan="2">Satellite and Drone Imagery (RGB, multispectral indices like **NDVI** for plant health).</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Output</td>
+                                <td class="px-6 py-4 text-sm text-gray-500" colspan="2">Categorical Classification: *Healthy*, *Fungal Infection*, *Pest Damage*, *Nutrient Deficient*.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Requirements and Acquisition -->
+        <section id="data-requirements" class="mb-12 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-500 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                5. Data Requirements and Acquisition
+            </h2>
+            <p class="text-gray-700 mb-4">
+                The system relies on aggregating and processing massive datasets from heterogeneous sources to provide the necessary "ground truth" and real-time monitoring.
+            </p>
+            <ul class="list-disc list-inside space-y-3 text-gray-700 text-lg ml-4">
+                <li class="font-medium"><span class="text-indigo-600">Satellite Imagery:</span> Frequent updates on vegetation indices (NDVI, EVI) and soil moisture via APIs (e.g., Copernicus Sentinel, Google Earth Engine).</li>
+                <li class="font-medium"><span class="text-indigo-600">Weather Stations:</span> Real-time and historical local weather data (temperature, precipitation).</li>
+                <li class="font-medium"><span class="text-indigo-600">IoT Sensors:</span> Ground-based sensors providing real-time soil pH, temperature, and nutrient levels.</li>
+                <li class="font-medium"><span class="text-indigo-600">Historical Records:</span> Farmer-provided historical yield and input logs for supervised learning training.</li>
+            </ul>
+        </section>
+
+        <!-- Contribution to SDG 2 (Impact) -->
+        <section id="impact" class="p-8 bg-green-50 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">
+                6. Contribution to SDG 2 (Impact)
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-green-300">
+                    <thead class="bg-green-200">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-sm font-bold text-gray-800 uppercase tracking-wider rounded-tl-lg">Area of Impact</th>
+                            <th class="px-6 py-3 text-left text-sm font-bold text-gray-800 uppercase tracking-wider rounded-tr-lg">Description of Contribution</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">Risk Mitigation</td>
+                            <td class="px-6 py-4 text-gray-700">Early detection of disease/pest outbreaks (via CNNs) allows for targeted, small-scale application of treatments, saving the entire harvest.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">Optimized Resources</td>
+                            <td class="px-6 py-4 text-gray-700">Accurate yield forecasts help farmers decide on optimal timing for harvesting, irrigation, and fertilization, significantly reducing waste and maximizing efficiency.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">Economic Stability</td>
+                            <td class="px-6 py-4 text-gray-700">By minimizing yield loss and improving efficiency, the platform stabilizes the income of smallholder farmers, breaking the cycle of poverty and strengthening local economies.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">Resilience to Climate</td>
+                            <td class="px-6 py-4 text-gray-700">The models incorporate climate projections, allowing for long-term guidance on resilient crop selection and drought management strategies.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-12">
+        <div class="container mx-auto text-center text-sm">
+            &copy; 2025 Agrivision Project. AI for Sustainable Development.
+        </div>
+    </footer>
+
+</body>
+</html>
